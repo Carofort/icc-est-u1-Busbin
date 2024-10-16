@@ -1,22 +1,28 @@
-import java.util.Scanner;
-import java.util.Arrays;
 
 public class Persona {
+    public String nombre;
+    public int edad;
     
-    public void arregloPersonas(int[] arreglo){
-        String nombre;
-        int edad;
-        Scanner leer = new Scanner(System.in);
-
-        System.out.println("Ingrese la cantidad de personas en el listado: ");
-        int tamanio = leer.nextInt();
-
-
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
     }
-    
 
-    
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
-
+    public String toString() {
+        return "Persona [nombre=" + nombre + ", edad=" + edad + "]";
+    }
 
 }
